@@ -167,11 +167,11 @@ if __name__ == '__main__':
     
     # ResNet
     ####################################################################################################################################### 실습 #2
-    # Conventional model
+    # Proposed model
     model_dict = torch.load('<< fastres_model000000069.model 경로 >>', map_location=device)
     model = model_pr(nOut=256, n_class=5994 ,margin=0.2 , scale=30)
 
-    # Proposed model
+    # Proposed model with fine-tuning
     # model_dict = torch.load('<< FAST_FT79.txt 경로 >>', map_location=device)
     # model = model(nOut=256, n_class=5994 ,margin=0.2 , scale=30)
 
